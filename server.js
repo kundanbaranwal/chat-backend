@@ -14,7 +14,10 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://masync-chat-app.netlify.app"],
+    origin: [
+      "http://localhost:5173",
+      "https://chat-frontend-hazel-six.vercel.app",
+    ],
     methods: ["GET", "POST"],
     credentials: true,
   },
