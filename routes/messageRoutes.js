@@ -1,5 +1,5 @@
 const express = require("express");
-const Message = require("../models/chatModel");
+const Message = require("../models/chatsModel");
 const { protect } = require("../middlewares/authMiddleware");
 const messageRouter = express.Router();
 //send message
