@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModel");
+const User = require("../models/usersModel");
 
 //middleware to make sure that user is logged in with right token
 const protect = async (req, res, next) => {
